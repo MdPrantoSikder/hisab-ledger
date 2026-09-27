@@ -167,7 +167,7 @@ _Results will be added after load testing._
 
 ## Roadmap
 
-- [ ] Core ledger with double-entry validation
+- [ ] Core ledger with double-entry validation.
 - [ ] Idempotency layer
 - [ ] Concurrency tests
 - [ ] bKash sandbox integration
