@@ -1,4 +1,4 @@
-# Hisab — Double-Entry Ledger & Payment Reconciliation
+ # Hisab — Double-Entry Ledger & Payment Reconciliation
 
 A correctness-first ledger and reconciliation system for Bangladeshi businesses that receive money through bKash, SSLCommerz, bank transfers, and cash on delivery.
 
@@ -145,11 +145,11 @@ Amounts are stored as integers in **poisha** (৳1 = 100 poisha) to avoid floati
 
 | Decision | Reason |
 |---|---|
-| Integer amounts in poisha | Floats cause rounding errors with money. |
-| Append-only entries | Full audit history; mistakes are fixed with reversal entries. |
-| Idempotency keys stored in PostgreSQL + Redis | Fast duplicate checks with a durable fallback. |
-| Row-level locking on balance updates | Prevents race conditions during concurrent writes. |
-| Webhooks verified, then processed asynchronously | Fast acknowledgement and safe retries. |
+| Integer amounts in poisha | Floats cause rounding errors with money |
+| Append-only entries | Full audit history; mistakes are fixed with reversal entries |
+| Idempotency keys stored in PostgreSQL + Redis | Fast duplicate checks with a durable fallback |
+| Row-level locking on balance updates | Prevents race conditions during concurrent writes |
+| Webhooks verified, then processed asynchronously | Fast acknowledgement and safe retries |
 
 Details are in [`docs/`](docs/).
 
