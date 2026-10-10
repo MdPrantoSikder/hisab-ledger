@@ -23,7 +23,7 @@ Hisab records every movement of money as a **balanced double-entry transaction**
 - **Idempotent APIs:** retried requests never create duplicate transactions.
 - **Concurrency-safe balances:** no race conditions under heavy parallel writes.
 - **Payment integrations:** bKash (sandbox) and SSLCommerz (sandbox) with safe webhook handling
-- **Reconciliation engine:** rule-based plus embedding-based matching of payments to orders.
+- **Reconciliation engine:** rule-based plus embedding-based matching of payments to orders
 - **Audit trail:** append-only records; entries are reversed, never edited or deleted.
 - **Dashboard:** balances, unmatched transactions, and a manual review queue.
 
